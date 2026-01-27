@@ -18,12 +18,12 @@ export function Footer() {
   ];
 
   const services = [
-    { name: "Web Application Development", href: "#services" },
-    { name: "Product Development", href: "#services" },
-    { name: "Data Analysis", href: "#services" },
-    { name: "AI & ML", href: "#services" },
-    { name: "HR Management", href: "#services" },
-    { name: "Payroll Services", href: "#services" },
+    { name: "Web Application Development", href: "#web-development" },
+    { name: "Product Development", href: "#product-development" },
+    { name: "Data Analysis", href: "#data-analysis" },
+    { name: "AI & ML", href: "#ai-ml-development" },
+    { name: "HR Management", href: "#hr-management" },
+    { name: "Payroll Services", href: "#payroll-services" },
   ];
 
   const quickLinks = [

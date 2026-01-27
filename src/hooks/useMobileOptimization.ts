@@ -17,26 +17,20 @@ export function useMobileOptimization() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Return optimized animation props for mobile
+  // Return optimized animation props - now instant for ALL devices to prevent lazy loading
   const getAnimationProps = (desktopProps: any) => {
-    if (isMobile) {
-      // On mobile, show content immediately without animations
-      return {
-        initial: { opacity: 1 },
-        animate: { opacity: 1 },
-        transition: { duration: 0 },
-      };
-    }
-    return desktopProps;
+    // Show content immediately without animations on all devices
+    return {
+      initial: { opacity: 1 },
+      animate: { opacity: 1 },
+      transition: { duration: 0 },
+    };
   };
 
   // Return optimized viewport props
   const getViewportProps = () => {
-    if (isMobile) {
-      // On mobile, trigger immediately
-      return { once: true, amount: 0 };
-    }
-    return { once: true, amount: 0.3 };
+    // Trigger immediately on all devices
+    return { once: true, amount: 0 };
   };
 
   return {

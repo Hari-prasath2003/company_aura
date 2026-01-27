@@ -20,31 +20,37 @@ export function Services({ handleOpenPopup }: ServicesProps) {
 
   const detailedServices = [
     {
+      id: "product-development",
       icon: Code,
       title: "Product Development",
       description: "Innovation-driven development from concept to scalable product.",
     },
     {
+      id: "web-development",
       icon: Globe,
       title: "Web Development",
       description: "Design and development of secure, high-performance web applications.",
     },
     {
+      id: "data-analysis",
       icon: Database,
       title: "Data Analysis",
       description: "Transform raw data into actionable insights for smarter decision-making.",
     },
     {
+      id: "ai-ml-development",
       icon: Brain,
       title: "AI & ML Design and Development",
       description: "AI-powered solutions that enhance automation, personalization, and growth.",
     },
     {
+      id: "hr-management",
       icon: Users,
       title: "HR Management",
       description: "Simplified onboarding, performance tracking, and compliance management.",
     },
     {
+      id: "payroll-services",
       icon: DollarSign,
       title: "Payroll Services",
       description: "Automated payroll processing with tax compliance and detailed reporting.",
@@ -56,17 +62,15 @@ export function Services({ handleOpenPopup }: ServicesProps) {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.3 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0 }}
           className="text-center mb-10 md:mb-16"
         >
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="text-4xl md:text-6xl text-gray-900 mb-6"
           >
             <span className="bg-gradient-to-r from-[#ED5924] to-[#FF8C42] bg-clip-text text-transparent">
@@ -77,10 +81,9 @@ export function Services({ handleOpenPopup }: ServicesProps) {
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="text-gray-600 text-xl max-w-4xl mx-auto leading-relaxed"
           >
             Every business has unique goals and constraints. We design and deliver custom IT solutions 
@@ -90,10 +93,9 @@ export function Services({ handleOpenPopup }: ServicesProps) {
 
         {/* Key Highlights */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0 }}
           className="mb-20"
         >
           <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-3xl p-12">
@@ -102,10 +104,9 @@ export function Services({ handleOpenPopup }: ServicesProps) {
               {servicesOverview.map((service, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.1 * index }}
-                  viewport={{ once: true }}
+                  initial={{ opacity: 1, x: 0 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0 }}
                   className="flex items-start gap-3"
                 >
                   <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-[#ED5924] to-[#FF8C42] rounded-full flex items-center justify-center mt-1">
@@ -120,25 +121,24 @@ export function Services({ handleOpenPopup }: ServicesProps) {
 
         {/* Detailed Services Grid */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0 }}
         >
           <h3 className="text-3xl text-gray-900 mb-12 text-center">Our Services</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {detailedServices.map((service, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                viewport={{ once: true }}
+                id={service.id}
+                initial={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0 }}
                 whileHover={{ 
                   y: -10,
                   boxShadow: "0 20px 40px rgba(237, 89, 36, 0.15)",
                 }}
-                className="bg-white/80 backdrop-blur-xl border border-gray-200 rounded-2xl p-8 group relative overflow-hidden"
+                className="bg-white/80 backdrop-blur-xl border border-gray-200 rounded-2xl p-8 group relative overflow-hidden scroll-mt-24"
               >
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-[#ED5924]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"

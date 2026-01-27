@@ -175,17 +175,21 @@ export function PopupForm({ isOpen, onClose, onSubmit, animationType }: PopupFor
       await onSubmit(submissionData);
       setSubmitSuccess(true);
       
+      // Show thank you message for 2.5 seconds before closing
       setTimeout(() => {
         onClose();
-      }, 1500);
+      }, 2500);
     } catch (error) {
       setSubmitSuccess(true);
       setTimeout(() => {
         onClose();
-      }, 1500);
+      }, 2500);
     } finally {
       setIsSubmitting(false);
-      resetForm();
+      // Reset form after a delay to keep thank you message visible
+      setTimeout(() => {
+        resetForm();
+      }, 2600);
     }
   };
 

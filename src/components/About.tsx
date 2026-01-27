@@ -58,17 +58,15 @@ export function About() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.3 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0 }}
           className="text-center mb-10 md:mb-16"
         >
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="inline-block mb-4"
           >
             <span className="bg-gradient-to-r from-[#ED5924]/10 to-[#FF8C42]/10 border border-[#ED5924]/30 text-[#ED5924] px-4 py-2 rounded-full text-sm">
@@ -77,10 +75,9 @@ export function About() {
           </motion.div>
 
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="text-4xl md:text-6xl text-gray-900 mb-6"
           >
             <span className="bg-gradient-to-r from-[#ED5924] to-[#FF8C42] bg-clip-text text-transparent">
@@ -91,10 +88,9 @@ export function About() {
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed"
           >
             Aura Harks Technology is a trusted technology partner helping businesses navigate complex digital challenges. 
@@ -105,19 +101,17 @@ export function About() {
 
         {/* Highlights Grid */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0 }}
           className="grid md:grid-cols-4 gap-8 mb-16"
         >
           {highlights.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              viewport={{ once: true }}
+              initial={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0 }}
               whileHover={{ 
                 y: -10,
                 boxShadow: "0 20px 40px rgba(237, 89, 36, 0.15)",
@@ -151,10 +145,9 @@ export function About() {
 
         {/* Core Values */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0 }}
           className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-3xl p-12 mb-16"
         >
           <h3 className="text-3xl text-gray-900 mb-8 text-center">
@@ -191,10 +184,9 @@ export function About() {
         {/* Team & Collaboration Images */}
         <div className="grid md:grid-cols-3 gap-8">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0 }}
             whileHover={{ 
               y: -10,
               boxShadow: "0 25px 50px rgba(237, 89, 36, 0.2)",
@@ -212,8 +204,8 @@ export function About() {
               />
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0 }}
                 className="absolute bottom-0 left-0 right-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <h4 className="text-xl mb-2">Collaborative Excellence</h4>
@@ -223,10 +215,9 @@ export function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0 }}
             whileHover={{ 
               y: -10,
               boxShadow: "0 25px 50px rgba(237, 89, 36, 0.2)",
@@ -244,8 +235,8 @@ export function About() {
               />
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0 }}
                 className="absolute bottom-0 left-0 right-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <h4 className="text-xl mb-2">Innovation Hub</h4>
@@ -255,10 +246,9 @@ export function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0 }}
             whileHover={{ 
               y: -10,
               boxShadow: "0 25px 50px rgba(237, 89, 36, 0.2)",
@@ -276,8 +266,8 @@ export function About() {
               />
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0 }}
                 className="absolute bottom-0 left-0 right-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
                 <h4 className="text-xl mb-2">Strategic Planning</h4>
